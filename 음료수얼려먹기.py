@@ -1,5 +1,4 @@
-N=int(input())
-M=int(input())
+N,M=map(int,input().split(" "))
 frame = [[] for _ in range(0,N)]
 
 dx = [1,0,-1,0]
@@ -16,6 +15,7 @@ def DFS():
     for i in range(0,N):
         for j in range(0,M):
             if frame[i][j] == 0:
+                print(i,j)
                 count+=1
                 checkRoutine(i,j)
 
