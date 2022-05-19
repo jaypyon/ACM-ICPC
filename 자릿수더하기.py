@@ -19,3 +19,6 @@ def solution(n):
         return n
     else:
         return n%10 + solution(n//10)
+# Type Conversion Solution
+def solution(n):
+    return sum([int(i) for i in str(n)])
