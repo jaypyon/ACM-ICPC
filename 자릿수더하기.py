@@ -1,4 +1,4 @@
-# 처음 풀이
+# Iterable Solution
 def solution(n):
     answer=0
     count = 0
@@ -13,9 +13,9 @@ def solution(n):
         n-=(digit-1)*(10**i)
     return answer
 
-# 재귀구조를 이용한 풀이
-def sum_digit(number):
-    if number < 10:
-        return number;
-    return (number % 10) + sum_digit(number // 10) 
-print("결과 : {}".format(sum_digit(123)));
+# Recursive Solution
+def solution(n):
+    if n<10:
+        return n
+    else:
+        return n%10 + solution(n//10)
